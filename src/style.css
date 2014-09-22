@@ -1,0 +1,182 @@
+* {
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	font-family: inherit;
+}
+
+ul {
+	list-style-type: none;
+	padding: 10px;
+}
+
+li {
+	display: inline;
+	padding-right: 30px;
+}
+
+p {
+	font-size: 16px;
+}
+
+#landingheader {
+	background-color: #ccc;
+	color: white;
+	font-size: 18px;
+}
+
+#signin {
+	padding-right: 10px;
+	float: right;
+}
+
+.centered {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#search {
+	margin-top: 150px;
+	font-size: 36px;
+	width: 810px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#search h1 {
+	width: 360px;
+}
+
+.wordstripe .one {
+	color: #8bc9f4;
+}
+
+.wordstripe .two {
+	color: #ffbb78;
+}
+
+#landingfooter {
+	margin-top: 150px;
+	background-color: #ccc;
+	color: white;
+	height: 150px;
+	font-family: serif;
+}
+
+#quote {
+	border-right: 2px dotted white;
+	padding: 20px;
+	font-style: italic;
+	font-size: 12px;
+	float: left;
+	width: 350px;
+	font-weight: bold;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: inherit;
+}
+
+#actions {
+	margin-left: 30px;
+	font-style: italic;
+	width: 200px;
+	float: left;
+	font-family: inherit;
+}
+
+#actions li {
+	display: block;
+	font-family: inherit;
+	margin-bottom: 6px;
+}
+
+#users {
+	margin-left: 30px;
+	font-style: italic;
+	width: 200px;
+	float: left;
+	font-family: inherit;
+}
+
+#users li {
+	display: block;
+	font-family: inherit;
+	margin-bottom: 6px;
+}
+
+input {
+	height: 36px;
+	padding: 5px;
+}
+
+.button {
+	background-color: #8bc9f4;
+	float:right;
+	height: 25px;
+	border-radius: 5px;
+	color: white;
+	font-size: 18px;
+	padding: 5px 10px;
+	vertical-align: middle;
+}
+
+.button:hover {
+	cursor:pointer;
+}
+
+#instanthelp {
+	background-color: #8bc9f4;
+	width: 108px;
+}
+
+#dosearch {
+	background-color: #ffbb78;
+	width: 63px;
+	margin-left: 10px;
+}
+
+#slogan {
+	margin-top: 20px;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#copyright {
+	clear: left;
+	float: right;
+	font-size: 10px;
+}
+
+#comingsoon {
+	background-color: black;
+	color: white;
+	font-size: 36px;
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+#comingsoon form {
+	width: 550px;
+	margin-left: auto;
+	margin-right: auto;				
+}
+
+#comingsoon h1 {
+	width: 450px;
+}
+
+#comingsoon p {
+	margin-top: 20px;
+	width: 350px;
+}

@@ -1,0 +1,230 @@
+<html>
+	<head>
+		
+		<style>
+			* {
+				font-family: sans-serif;
+				margin: 0;
+				padding: 0;
+			}
+			
+			h1 {
+				font-weight: normal;
+				margin-bottom: 20px;
+			}
+			
+			a {
+				text-decoration: none;
+				color: white;
+				font-family: inherit;
+			}
+			
+			ul {
+				list-style-type: none;
+				padding: 10px;
+			}
+			
+			li {
+				display: inline;
+				padding-right: 30px;
+			}
+		
+			p {
+				font-size: 16px;
+			}
+			
+			#landingheader {
+				background-color: #ccc;
+				color: white;
+				font-size: 18px;
+			}
+			
+			#signin {
+				padding-right: 10px;
+				float: right;
+			}
+			
+			.centered {
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			#search {
+				margin-top: 150px;
+				font-size: 36px;
+				width: 810px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			#search h1 {
+				width: 360px;
+			}
+			
+			.wordstripe .one {
+				color: #8bc9f4;
+			}
+			
+			.wordstripe .two {
+				color: #ffbb78;
+			}
+			
+			#landingfooter {
+				margin-top: 150px;
+				background-color: #ccc;
+				color: white;
+				height: 150px;
+				font-family: serif;
+			}
+			
+			#quote {
+				border-right: 2px dotted white;
+				padding: 20px;
+				font-style: italic;
+				font-size: 12px;
+				float: left;
+				width: 350px;
+				font-weight: bold;
+				margin-left: auto;
+				margin-right: auto;
+				font-family: inherit;
+			}
+			
+			#actions {
+				margin-left: 30px;
+				font-style: italic;
+				width: 200px;
+				float: left;
+				font-family: inherit;
+			}
+			
+			#actions li {
+				display: block;
+				font-family: inherit;
+				margin-bottom: 6px;
+			}
+			
+			#users {
+				margin-left: 30px;
+				font-style: italic;
+				width: 200px;
+				float: left;
+				font-family: inherit;
+			}
+			
+			#users li {
+				display: block;
+				font-family: inherit;
+				margin-bottom: 6px;
+			}
+		
+			input {
+				height: 36px;
+				padding: 5px;
+			}
+			
+			.button {
+				background-color: #8bc9f4;
+				float:right;
+				height: 25px;
+				border-radius: 5px;
+				color: white;
+				font-size: 18px;
+				padding: 5px 10px;
+				vertical-align: middle;
+			}
+			
+			.button:hover {
+				cursor:pointer;
+			}
+			
+			#instanthelp {
+				background-color: #8bc9f4;
+				width: 108px;
+			}
+			
+			#dosearch {
+				background-color: #ffbb78;
+				width: 63px;
+				margin-left: 10px;
+			}
+
+			#slogan {
+				margin-top: 20px;
+				width: 300px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			#copyright {
+				clear: left;
+				float: right;
+				font-size: 10px;
+			}
+			
+			#comingsoon {
+				background-color: black;
+				color: white;
+				font-size: 36px;
+				padding-top: 200px;
+				padding-bottom: 200px;
+			}
+			
+			#comingsoon form {
+				width: 550px;
+				margin-left: auto;
+				margin-right: auto;				
+			}
+			
+			#comingsoon h1 {
+				width: 450px;
+			}
+			
+			#comingsoon p {
+				margin-top: 20px;
+				width: 350px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul id="landingheader">
+			<li><a href="becomeatutor.php">Become A Tutor</a></li>
+			<li><a href="findatutor.php">Find A Tutor</a></li>
+			<li id="signin"><a href="login.php">Sign In</a></li>
+		</ul>
+		<div id="search" class="centered">
+			<form action="search.php" method="post">
+				<h1 class="wordstripe centered"><span class="one">unflunk</span><span class="two">me</span></h1>
+				<input id="query" size="60" name="q"/>
+				<div id="dosearch" class="button">Search</div>
+				<div id="instanthelp" class="button">Instant Help</div>
+			</form>
+		</div>
+		<p id="slogan">Ask a homework question.  Get help.</p>
+		<div id="landingfooter">
+			<p id="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris!"
+					- Dante User</p>
+			<ul id="actions">
+				<li><a href="howitworks.php">How it works</a></li>
+				<li><a href="contactus.php">Contact Us</a></li>
+			</ul>
+			<ul id="users">
+				<li><a href="contentproviders.php">Content Providers</a></li>
+				<li><a href="tutoringagencies.php">Tutoring Agencies</a></li>
+				<li><a href="apiconsumers.php">API Consumers</a></li>
+			</ul>
+			<p id="copyright">
+				&copy; 2014 All rights reserved.
+			</p>
+		</div>
+		<a name="comingsoon"/>
+		<div id="comingsoon" class="centered">
+			<form action="signup.php" method="post">
+				<h1 class="wordstripe centered"><span class="one">coming</span><span class="two">soon!</span></h1>
+				<input id="emailAddress" name="emailAddress" title="Email Addresss" value="Email Address" class="centered" size="40" name="q" style="color:#888" onfocus="inputFocus(this)" onblur="inputBlur(this)"/>
+				<div class="button">Notify me</div>
+				<p id="comingsoonmessage" class="centered">Be notified when this service is available!</p>
+			</form>
+		</div>
+	</body>
+</html>	
