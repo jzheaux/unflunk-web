@@ -2,6 +2,8 @@
 	require_once 'Drewm/MailChimp.php';
 
 	class signupController {
+		public function doGet() {}
+		
 		public function doPost() {
 
 			$id = 'ced532d78b';

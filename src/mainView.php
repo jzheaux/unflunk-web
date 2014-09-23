@@ -11,8 +11,9 @@
 				<form action="index.php/search" method="get">
 					<h1 class="wordstripe centered"><span class="one">unflunk</span><span class="two">me</span></h1>
 					<input id="query" size="60" name="q"/>
-					<div id="dosearch" class="button" onclick="this.parentElement.submit()">Search</div>
-					<div id="instanthelp" class="button" onclick="this.parentElement.submit()">Instant Help</div>
+					<input name="type" type="hidden" value="instant"/>
+					<div id="dosearch" class="button" onclick="document.getElementsByName('type')[0].value = 'search'; this.parentElement.submit()">Search</div>
+					<div id="instanthelp" class="button" onclick="document.getElementsByName('type')[0].value = 'instant'; this.parentElement.submit()">Instant Help</div>
 				</form>
 			</div>
 			<p id="slogan">Ask a homework question.  Get help.</p>

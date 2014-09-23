@@ -10,7 +10,7 @@
 		'tutoringagencies' => 'signup',
 		'contactus' => 'signup',
 		'howitworks' => 'signup',
-		'search' => 'signup',
+		'search' => 'search',
 		'signup' => 'signup' ];
 		
 	if ( sizeof($parts) == 3 ) {
@@ -30,7 +30,7 @@
 	if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {	
 		$viewArgs = $controller->doPost();
 	} else {
-		//$controller->doGet();
+		$viewArgs = $controller->doGet();
 	}
 
 	$viewClass = $action . 'View';
