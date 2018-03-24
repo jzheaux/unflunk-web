@@ -1,5 +1,5 @@
 * {
-	font-family: sans-serif;
+	font-family: Arial;
 	margin: 0;
 	padding: 0;
 }
@@ -23,21 +23,55 @@ ul {
 li {
 	display: inline;
 	padding-right: 30px;
+	color: white;
 }
 
 p {
 	font-size: 16px;
 }
 
+body {
+	width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 #landingheader {
 	background-color: #ccc;
 	color: white;
 	font-size: 18px;
+	box-shadow: 0px 0px 10px #ccc;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 99%;
+	height: 20px;
+	transition: height 1s;
+	overflow: hidden;
+}
+
+#landingheader:hover {
+
+	height: 100px;
 }
 
 #signin {
 	padding-right: 10px;
 	float: right;
+}
+
+#signin p {
+	font-size: 18px;
+	padding-bottom: 10px;
+	text-align: right;
+}
+
+#dosignin {
+	margin-left: 5px;
+}
+
+#register {
+	margin-left: 5px;
 }
 
 .centered {
@@ -48,20 +82,25 @@ p {
 #search {
 	margin-top: 150px;
 	font-size: 36px;
-	width: 810px;
+	width: inherit;
 	margin-left: auto;
 	margin-right: auto;
+	float: left;
 }
 
 #search h1 {
 	width: 360px;
 }
 
-.wordstripe .one {
+#search input {
+	width: 500px;
+}
+
+.wordstripe .one, .one {
 	color: #8bc9f4;
 }
 
-.wordstripe .two {
+.wordstripe .two, .two {
 	color: #ffbb78;
 }
 
@@ -71,6 +110,7 @@ p {
 	color: white;
 	height: 150px;
 	font-family: serif;
+	box-shadow: 0px 0px 10px #ccc;
 }
 
 #quote {
@@ -121,13 +161,12 @@ input {
 
 .button {
 	background-color: #8bc9f4;
-	float:right;
 	height: 25px;
 	border-radius: 5px;
 	color: white;
 	font-size: 18px;
-	padding: 5px 10px;
-	vertical-align: middle;
+	padding: 8px 10px;
+	display: inline;
 }
 
 .button:hover {
@@ -136,20 +175,20 @@ input {
 
 #instanthelp {
 	background-color: #8bc9f4;
-	width: 108px;
 }
 
 #dosearch {
 	background-color: #ffbb78;
-	width: 63px;
 	margin-left: 10px;
 }
 
 #slogan {
 	margin-top: 20px;
-	width: 300px;
+	width: 310px;
 	margin-left: auto;
 	margin-right: auto;
+	font-weight: normal;
+	font-size: 18px;
 }
 
 #copyright {
@@ -179,4 +218,132 @@ input {
 #comingsoon p {
 	margin-top: 20px;
 	width: 350px;
+}
+
+#searchresults {
+	display:inline;
+	width: 60%
+}
+
+#searchresults ul {
+	width: inherit;
+	margin-left: auto;
+	margin-right: auto;
+	float: left;
+}
+
+#searchresults a {
+	color: black;
+	font-weight: bold;
+	color: #5e7de6;
+}
+
+#searchresults li {
+	display: block;
+	padding-bottom: 25px;
+	padding-top: 25px;
+	padding-left: 10px;
+	color: black;
+	clear: left;
+	border-bottom: 1px solid black;
+}
+
+#searchresults li:hover {
+	background: #CCCCFF;
+	cursor: pointer;
+}
+
+#searchresults li.header {
+	text-align: right;
+}
+
+#searchresults li.header:hover {
+	background: white;
+	cursor: arrow;
+}
+
+#searchresults li p {
+	padding-bottom: 8px;
+}
+
+.stats {
+	float: left;
+	padding-right: 20px;
+	text-align: center;
+}
+
+.comments {
+	background-color: #8bc9f4;
+}
+
+.answers {
+	background-color: #ffbb78;
+}
+
+.stats .count  {
+	display: block;
+	font-size: 24px;
+}
+
+#menu {
+	float: left;
+	width: 30%;
+}
+
+#menu li {
+	color: black;
+}
+
+.menuitem li.first {
+	font-weight: bold;
+	text-align: left;
+	padding-bottom: 5px;
+}
+
+.menuitem li {
+	display: block;
+}
+
+#menu a {
+	color: #8bc9f4;
+}
+
+#menu a:hover {
+	font-weight: bold;
+}
+
+#main {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	color: black;
+}
+
+#question {
+	float: left;
+	width: 60%
+}
+
+.rating {
+	float:left;
+	width: 20px;
+	font-size: 32px;
+	padding-right: 10px;
+}
+
+.uparrow {
+	text-rotate: 180;
+}
+
+.description {
+	padding: 10px;
+}
+
+#answers {
+	border-top: 1px solid black;
+}
+
+#answers li {
+	color: inherit;
+	display: block;
 }
